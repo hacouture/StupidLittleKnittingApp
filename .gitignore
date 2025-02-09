@@ -1,0 +1,6 @@
+\.vscode/launch\.json
+\.vscode/settings\.json
+.DS_Store
+.prettierrc
+.prettierignore
+eslint.config.mjs
