@@ -1,0 +1,40 @@
+/* try tailwind later */
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: 'Atkinson Hyperlegible Mono', serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.stitch-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.crochet-stitch {
+    cursor: pointer;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 50%;
+
+    &.single-crochet {
+        background: pink;
+    }
+}
+
+@media (min-width: 992px) {
+    .crochet-stitch {
+        width: 250px;
+        height: 250px;
+    }
+}
